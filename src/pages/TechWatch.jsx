@@ -1,5 +1,5 @@
 import React from "react";
-import { CTA } from "../components"; // Assurez-vous que ce composant existe et est correctement importé.
+import CTA from "../components/CTA";
 
 const TechWatch = () => {
     return (

@@ -1,7 +1,8 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
-import { Footer, Navbar } from "./components";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import { About, Contact, Home, Projects, Bts, TechWatch } from "./pages";
 
 const AnimatedRoute = ({ children }) => {

@@ -1,5 +1,5 @@
 import React from "react";
-import { CTA } from "../components";
+import CTA from "../components/CTA";
 import "react-vertical-timeline-component/style.min.css";
 
 const Bts = () => {
