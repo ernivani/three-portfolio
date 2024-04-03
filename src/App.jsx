@@ -2,7 +2,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { Footer, Navbar } from "./components";
-import { About, Contact, Home, Projects } from "./pages";
+import { About, Contact, Home, Projects, Bts, TechWatch } from "./pages";
 
 const AnimatedRoute = ({ children }) => {
     const location = useLocation();
@@ -42,6 +42,11 @@ const App = () => {
                             <AnimatedRoute>
                                 <>
                                     <Routes>
+                                        <Route
+                                            path="/TechWatch"
+                                            element={<TechWatch />}
+                                        />
+                                        <Route path="/bts" element={<Bts />} />
                                         <Route
                                             path="/about"
                                             element={<About />}

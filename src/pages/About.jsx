@@ -43,17 +43,22 @@ const About = () => {
                 <h4 className="text-lg font-bold mt-8">Frontend</h4>
                 <div className="mt-16 flex flex-wrap gap-12">
                     {FrontendCompetences.map((skill) => (
-                        <div
-                            className="block-container w-20 h-20"
-                            key={skill.name}
-                        >
-                            <div className="btn-back rounded-xl" />
-                            <div className="btn-front rounded-xl flex justify-center items-center">
-                                <img
-                                    src={skill.imageUrl}
-                                    alt={skill.name}
-                                    className="w-1/2 h-1/2 object-contain"
-                                />
+                        <div className="flip-card" key={skill.name}>
+                            <div className="flip-card-inner">
+                                <div className="flip-card-front rounded-xl flex justify-center items-center">
+                                    <img
+                                        src={skill.imageUrl}
+                                        alt={skill.name}
+                                        className="w-1/2 h-1/2 object-contain"
+                                    />
+                                </div>
+                                <div className="flip-card-back rounded-xl flex justify-center items-center">
+                                    <span>
+                                        {skill.percentage
+                                            ? skill.percentage
+                                            : "N/A"}
+                                    </span>{" "}
+                                </div>
                             </div>
                         </div>
                     ))}
@@ -64,17 +69,22 @@ const About = () => {
                 <h4 className="text-lg font-bold">Backend</h4>
                 <div className="mt-4 flex flex-wrap gap-12">
                     {BackendCompetences.map((skill) => (
-                        <div
-                            className="block-container w-20 h-20"
-                            key={skill.name}
-                        >
-                            <div className="btn-back rounded-xl" />
-                            <div className="btn-front rounded-xl flex justify-center items-center">
-                                <img
-                                    src={skill.imageUrl}
-                                    alt={skill.name}
-                                    className="w-1/2 h-1/2 object-contain"
-                                />
+                        <div className="flip-card" key={skill.name}>
+                            <div className="flip-card-inner">
+                                <div className="flip-card-front rounded-xl flex justify-center items-center">
+                                    <img
+                                        src={skill.imageUrl}
+                                        alt={skill.name}
+                                        className="w-1/2 h-1/2 object-contain"
+                                    />
+                                </div>
+                                <div className="flip-card-back rounded-xl flex justify-center items-center">
+                                    <span>
+                                        {skill.percentage
+                                            ? skill.percentage
+                                            : "N/A"}
+                                    </span>{" "}
+                                </div>
                             </div>
                         </div>
                     ))}
@@ -85,17 +95,22 @@ const About = () => {
                 <h4 className="text-lg font-bold">Autres</h4>
                 <div className="mt-4 flex flex-wrap gap-12">
                     {OtherCompetences.map((skill) => (
-                        <div
-                            className="block-container w-20 h-20"
-                            key={skill.name}
-                        >
-                            <div className="btn-back rounded-xl" />
-                            <div className="btn-front rounded-xl flex justify-center items-center">
-                                <img
-                                    src={skill.imageUrl}
-                                    alt={skill.name}
-                                    className="w-1/2 h-1/2 object-contain"
-                                />
+                        <div className="flip-card" key={skill.name}>
+                            <div className="flip-card-inner">
+                                <div className="flip-card-front rounded-xl flex justify-center items-center">
+                                    <img
+                                        src={skill.imageUrl}
+                                        alt={skill.name}
+                                        className="w-1/2 h-1/2 object-contain"
+                                    />
+                                </div>
+                                <div className="flip-card-back rounded-xl flex justify-center items-center">
+                                    <span>
+                                        {skill.percentage
+                                            ? skill.percentage
+                                            : "N/A"}
+                                    </span>{" "}
+                                </div>
                             </div>
                         </div>
                     ))}
